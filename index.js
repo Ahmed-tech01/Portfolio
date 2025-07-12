@@ -36,3 +36,20 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+  const menuIcon = document.getElementById("menu-icon");
+  const closeIcon = document.getElementById("close-icon");
+
+  document.getElementById("menu-toggle").addEventListener("click", function () {
+    if (menuIcon.style.display !== "none") {
+      menuIcon.style.display = "none";
+      closeIcon.style.display = "inline";
+      // Show mobile menu if needed
+    } else {
+      menuIcon.style.display = "inline";
+      closeIcon.style.display = "none";
+      // Hide mobile menu if needed
+    }
+  });
+
+
